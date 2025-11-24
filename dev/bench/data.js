@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1764001876222,
+  "lastUpdate": 1764001941513,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -22635,6 +22635,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_req_100kb",
             "value": 125405,
             "range": "± 5116",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "contact@f0rki.at",
+            "name": "Michael Rodler",
+            "username": "f0rki"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2968dbcd75509263907ec3a1f964a4c4465c0ebb",
+          "message": "chore(ci): run cargo-audit weekly to check for known vulnerabilities in dependencies. (#3246)\n\n`cargo audit` checks for dependencies with known issues. This PR adds a github workflow that runs `cargo audit` on a weekly basis on `HEAD` and whenever a dependency changes.\n\nSigned-off-by: Michael Rodler <mrodler@amazon.de>\nCo-authored-by: Michael Rodler <mrodler@amazon.de>\nCo-authored-by: f0rki <m@mrodler.eu>",
+          "timestamp": "2025-11-24T10:37:31-05:00",
+          "tree_id": "dfbb0c2eaf5ff44437c6d3cc3599f85bf4d4ad29",
+          "url": "https://github.com/dudw/hyper/commit/2968dbcd75509263907ec3a1f964a4c4465c0ebb"
+        },
+        "date": 1764001940442,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 67960,
+            "range": "± 800.08",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4770569,
+            "range": "± 533980.70",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 20767,
+            "range": "± 2030.32",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 23345,
+            "range": "± 551.25",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 31080,
+            "range": "± 645.43",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 95511,
+            "range": "± 2263.21",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 35109,
+            "range": "± 910.94",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 87596,
+            "range": "± 4243.95",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 23938136,
+            "range": "± 32590256.16",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 23971129,
+            "range": "± 16465781.35",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7369257,
+            "range": "± 86627.99",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 50686334,
+            "range": "± 3841095.76",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 57344447,
+            "range": "± 10931512.18",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5172863,
+            "range": "± 4200791.92",
             "unit": "ns/iter"
           }
         ]
