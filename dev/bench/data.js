@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1764001941513,
+  "lastUpdate": 1764023471266,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -6901,6 +6901,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 37504,
             "range": "± 8561.78",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9da18144397faf3cf1f7d04eb41d6f541f6f189e",
+          "message": "refactor(http1): simplify match of Token parse error (#3981)",
+          "timestamp": "2025-11-24T14:10:16-05:00",
+          "tree_id": "8962e73d2fe975ed9401b70f5d453fc53d32e270",
+          "url": "https://github.com/dudw/hyper/commit/9da18144397faf3cf1f7d04eb41d6f541f6f189e"
+        },
+        "date": 1764023469410,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 48697,
+            "range": "± 10096.07",
             "unit": "ns/iter"
           }
         ]
