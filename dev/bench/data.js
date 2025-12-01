@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1764109911287,
+  "lastUpdate": 1764606672782,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -6961,6 +6961,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 47564,
             "range": "± 1638.01",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "coryan@google.com",
+            "name": "Carlos O'Ryan",
+            "username": "coryan"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1c70fab64e90f90025eab364beda927044e356fc",
+          "message": "docs(rt): fix comment in `put_slice()` (#3986)\n\nNitpicky, I know, but renders poorly in the docs.",
+          "timestamp": "2025-12-01T09:47:45-05:00",
+          "tree_id": "4e11357f878ea271731a10b58ed0dd65016b86d4",
+          "url": "https://github.com/dudw/hyper/commit/1c70fab64e90f90025eab364beda927044e356fc"
+        },
+        "date": 1764606671698,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 45406,
+            "range": "± 8037.46",
             "unit": "ns/iter"
           }
         ]
