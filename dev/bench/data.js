@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765924275415,
+  "lastUpdate": 1765924333545,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -23187,6 +23187,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5078928,
             "range": "± 4159068.07",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "da80d2a22427f16d183c04cbae2377c6061f2d83",
+          "message": "test(lib): fix unused warnings due to feature gating test imports (#3997)",
+          "timestamp": "2025-12-16T14:00:54-05:00",
+          "tree_id": "a2fc99ee08fc596ca8e8050b17ddf880c2ec9577",
+          "url": "https://github.com/dudw/hyper/commit/da80d2a22427f16d183c04cbae2377c6061f2d83"
+        },
+        "date": 1765924332316,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 67463,
+            "range": "± 1182.74",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4753453,
+            "range": "± 239781.83",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 21381,
+            "range": "± 506.79",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 23578,
+            "range": "± 2688.74",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 31047,
+            "range": "± 598.97",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 96157,
+            "range": "± 1787.65",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 35672,
+            "range": "± 1624.71",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 88118,
+            "range": "± 1532.13",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 23939241,
+            "range": "± 32360895.78",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 7659994,
+            "range": "± 105570.20",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7418432,
+            "range": "± 141117.30",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 50123786,
+            "range": "± 1357210.63",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 58256098,
+            "range": "± 8886536.52",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5088387,
+            "range": "± 4189677.55",
             "unit": "ns/iter"
           }
         ]
