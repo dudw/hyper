@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1764606741702,
+  "lastUpdate": 1765924275415,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -6991,6 +6991,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 45406,
             "range": "± 8037.46",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "da80d2a22427f16d183c04cbae2377c6061f2d83",
+          "message": "test(lib): fix unused warnings due to feature gating test imports (#3997)",
+          "timestamp": "2025-12-16T14:00:54-05:00",
+          "tree_id": "a2fc99ee08fc596ca8e8050b17ddf880c2ec9577",
+          "url": "https://github.com/dudw/hyper/commit/da80d2a22427f16d183c04cbae2377c6061f2d83"
+        },
+        "date": 1765924273513,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 39041,
+            "range": "± 7865.85",
             "unit": "ns/iter"
           }
         ]
