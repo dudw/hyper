@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765924333545,
+  "lastUpdate": 1766161875156,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7021,6 +7021,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 39041,
             "range": "± 7865.85",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "1835304752@qq.com",
+            "name": "lif",
+            "username": "majiayu000"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "32b76f4742df62f4419b9f87ef464bc0b1c21e72",
+          "message": "docs(rt): improve `Read` and `ReadBufCursor` documentation (#4000)\n\nAdd comprehensive documentation for implementing the Read trait:\n- Explain the difference from tokio's AsyncRead\n- Provide a complete example of implementing Read using put_slice\n- Document when to use unsafe methods\n\nImprove ReadBufCursor documentation:\n- Describe safe vs unsafe approaches\n- Add examples for both put_slice and as_mut/advance usage\n- Link to relevant methods\n\nFixes #3649",
+          "timestamp": "2025-12-19T09:51:53-05:00",
+          "tree_id": "a295cf6007a70246c013db3cef620ba61ef3c4f5",
+          "url": "https://github.com/dudw/hyper/commit/32b76f4742df62f4419b9f87ef464bc0b1c21e72"
+        },
+        "date": 1766161873377,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 51726,
+            "range": "± 10394.06",
             "unit": "ns/iter"
           }
         ]
