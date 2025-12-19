@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1766161875156,
+  "lastUpdate": 1766161933653,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -23325,6 +23325,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5088387,
             "range": "± 4189677.55",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "1835304752@qq.com",
+            "name": "lif",
+            "username": "majiayu000"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "32b76f4742df62f4419b9f87ef464bc0b1c21e72",
+          "message": "docs(rt): improve `Read` and `ReadBufCursor` documentation (#4000)\n\nAdd comprehensive documentation for implementing the Read trait:\n- Explain the difference from tokio's AsyncRead\n- Provide a complete example of implementing Read using put_slice\n- Document when to use unsafe methods\n\nImprove ReadBufCursor documentation:\n- Describe safe vs unsafe approaches\n- Add examples for both put_slice and as_mut/advance usage\n- Link to relevant methods\n\nFixes #3649",
+          "timestamp": "2025-12-19T09:51:53-05:00",
+          "tree_id": "a295cf6007a70246c013db3cef620ba61ef3c4f5",
+          "url": "https://github.com/dudw/hyper/commit/32b76f4742df62f4419b9f87ef464bc0b1c21e72"
+        },
+        "date": 1766161932279,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 67628,
+            "range": "± 982.35",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4588108,
+            "range": "± 308200.29",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 20806,
+            "range": "± 452.58",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 23194,
+            "range": "± 374.41",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 30766,
+            "range": "± 691.94",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 99230,
+            "range": "± 2751.98",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 34479,
+            "range": "± 1955.69",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 87943,
+            "range": "± 1899.03",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 23882915,
+            "range": "± 32456828.77",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 23890856,
+            "range": "± 16436031.34",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7292144,
+            "range": "± 103181.99",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 48923439,
+            "range": "± 728786.45",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 58066321,
+            "range": "± 9119062.29",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5191050,
+            "range": "± 4618764.67",
             "unit": "ns/iter"
           }
         ]
