@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1766161933653,
+  "lastUpdate": 1767630671340,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7051,6 +7051,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 51726,
             "range": "± 10394.06",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "poe.liu@pm.me",
+            "name": "Dongpo Liu",
+            "username": "0xPoe"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bcb8ec576619650d3388604e6c246829e7be133a",
+          "message": "fix(http1): use httparse config for Servers (#4002)\n\nPreviously, you could config the httparse config on the server `Builder`, just like you can for clients, but unlike clients, hyper forgot to _use_ that config when parsing requests.\n\nThis fixes the mistake.\n\nCloses #3923",
+          "timestamp": "2026-01-05T09:12:59-05:00",
+          "tree_id": "c212d6aa89cb6c0b51c423195db7eae6dcde9316",
+          "url": "https://github.com/dudw/hyper/commit/bcb8ec576619650d3388604e6c246829e7be133a"
+        },
+        "date": 1767630669938,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 49384,
+            "range": "± 7905.41",
             "unit": "ns/iter"
           }
         ]
