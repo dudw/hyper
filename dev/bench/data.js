@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1767630720495,
+  "lastUpdate": 1768257071498,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7081,6 +7081,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 49384,
             "range": "± 7905.41",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "techregister@pm.me",
+            "name": "Dongpo Liu",
+            "username": "0xPoe"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0f0b6ed3ac55ac1682afd2104cb8d0385149249a",
+          "message": "docs(examples): replace unwraps with expects explaining why (#4001)\n\nJust avoid unwrap as much as possible. Use expect to assert that it will always succeed.\n\nCloses #3984",
+          "timestamp": "2026-01-12T15:28:42-05:00",
+          "tree_id": "43f60cf56f427ca11003e0ac2bb8d8269fd82b01",
+          "url": "https://github.com/dudw/hyper/commit/0f0b6ed3ac55ac1682afd2104cb8d0385149249a"
+        },
+        "date": 1768257070096,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 51421,
+            "range": "± 9263.60",
             "unit": "ns/iter"
           }
         ]
