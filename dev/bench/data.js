@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1770417070542,
+  "lastUpdate": 1770417196533,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -23739,6 +23739,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5009799,
             "range": "± 4532687.12",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "32046070+njg7194@users.noreply.github.com",
+            "name": "No jae gun",
+            "username": "njg7194"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ccd3a5a4cc0762c59047eef64b77329ec7d27938",
+          "message": "chore: convert bug report template to GitHub form (#4015)\n\nConverts the bug report issue template from markdown to GitHub's YAML\nform format. This provides a more structured experience for users\nfiling bug reports with:\n\n- Required version and platform fields\n- Separate sections for code, expected behavior, and actual behavior\n- Better input validation\n- Improved readability for maintainers\n\nCloses #3213",
+          "timestamp": "2026-02-06T14:39:23-05:00",
+          "tree_id": "1be11e77f879a92beca5711c60387f926f61d228",
+          "url": "https://github.com/dudw/hyper/commit/ccd3a5a4cc0762c59047eef64b77329ec7d27938"
+        },
+        "date": 1770417195246,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 67264,
+            "range": "± 2152.76",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4388270,
+            "range": "± 419341.35",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 20961,
+            "range": "± 624.46",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 22923,
+            "range": "± 451.97",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 30740,
+            "range": "± 1742.24",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 101904,
+            "range": "± 6263.94",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 41000002,
+            "range": "± 7116.03",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 86450,
+            "range": "± 1782.07",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 7610958,
+            "range": "± 137801.57",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 7634075,
+            "range": "± 16327724.06",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7372248,
+            "range": "± 128821.53",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 48796447,
+            "range": "± 2111161.25",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 57193550,
+            "range": "± 9828610.39",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5308043,
+            "range": "± 4401329.80",
             "unit": "ns/iter"
           }
         ]
