@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1770417196533,
+  "lastUpdate": 1771259474881,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7141,6 +7141,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 50453,
             "range": "± 9976.69",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cuiweixie@gmail.com",
+            "name": "cui",
+            "username": "cuiweixie"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c36ca8a5c50e4a05a78aa3e158f13456ee674fb1",
+          "message": "fix(http2): non-utf8 char in Connection header may cause panic when calling to_str (#4019)",
+          "timestamp": "2026-02-16T09:32:09-05:00",
+          "tree_id": "1df999b3c31251b263918199237526a865d6b7ed",
+          "url": "https://github.com/dudw/hyper/commit/c36ca8a5c50e4a05a78aa3e158f13456ee674fb1"
+        },
+        "date": 1771259472958,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 39516,
+            "range": "± 9631.29",
             "unit": "ns/iter"
           }
         ]
