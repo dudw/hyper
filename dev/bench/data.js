@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1771259590565,
+  "lastUpdate": 1771281067840,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7171,6 +7171,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 39516,
             "range": "± 9631.29",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ffuugoo@users.noreply.github.com",
+            "name": "Roman Titov",
+            "username": "ffuugoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "577874591cae246dfb2d72d7140d794ac2fa605a",
+          "message": "feat(client): add HTTP/2 `max_local_error_reset_streams` option (#4021)",
+          "timestamp": "2026-02-16T14:59:34-05:00",
+          "tree_id": "16dfdb5c4bc1fba86f9377adc83a370bde3e9e2c",
+          "url": "https://github.com/dudw/hyper/commit/577874591cae246dfb2d72d7140d794ac2fa605a"
+        },
+        "date": 1771281066575,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 48391,
+            "range": "± 9896.17",
             "unit": "ns/iter"
           }
         ]
