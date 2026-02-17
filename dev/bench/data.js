@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1771281188445,
+  "lastUpdate": 1771367507432,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7201,6 +7201,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 48391,
             "range": "± 9896.17",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tottotodev@gmail.com",
+            "name": "tottoto",
+            "username": "tottoto"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8ba900853b0f619b165e8530fc8c310bc13e056b",
+          "message": "chore(dependencies): drop pin-utils dependency (#4023)",
+          "timestamp": "2026-02-17T07:23:16-05:00",
+          "tree_id": "44abdb8193595cdc05bd1035f0ee8d75b4bbf07f",
+          "url": "https://github.com/dudw/hyper/commit/8ba900853b0f619b165e8530fc8c310bc13e056b"
+        },
+        "date": 1771367506067,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 51592,
+            "range": "± 11641.02",
             "unit": "ns/iter"
           }
         ]
