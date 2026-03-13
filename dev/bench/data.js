@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1771367615259,
+  "lastUpdate": 1773441070575,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7231,6 +7231,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 51592,
             "range": "± 11641.02",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dentinyhao@gmail.com",
+            "name": "dentiny",
+            "username": "dentiny"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e13e783927d429fc03038fe512eeb4d379cf1a70",
+          "message": "docs(client): fix HTTP/2 max concurrent stream link to spec (#4037)",
+          "timestamp": "2026-03-13T12:52:07-04:00",
+          "tree_id": "f73987aedd74a03df32a890bcd83da30db855960",
+          "url": "https://github.com/dudw/hyper/commit/e13e783927d429fc03038fe512eeb4d379cf1a70"
+        },
+        "date": 1773441068661,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 56007,
+            "range": "± 10312.83",
             "unit": "ns/iter"
           }
         ]
