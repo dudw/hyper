@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1773678808588,
+  "lastUpdate": 1774391470056,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7291,6 +7291,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 48620,
             "range": "± 9531.22",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "john.howard@solo.io",
+            "name": "John Howard",
+            "username": "howardjohn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d51cb71569bbca7927b3828ef11e3bec4fa97eb4",
+          "message": "feat(client): expose HTTP/2 current max stream count (#4026)\n\nPropogate https://github.com/hyperium/h2/pull/784 up to hyper interface\n\nRef https://github.com/hyperium/hyper/issues/3623",
+          "timestamp": "2026-03-24T16:56:56-04:00",
+          "tree_id": "cc1784f2a2af16d814725e22fb9444e3bac241fc",
+          "url": "https://github.com/dudw/hyper/commit/d51cb71569bbca7927b3828ef11e3bec4fa97eb4"
+        },
+        "date": 1774391468929,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 50202,
+            "range": "± 10510.09",
             "unit": "ns/iter"
           }
         ]
