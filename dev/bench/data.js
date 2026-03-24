@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1774391470056,
+  "lastUpdate": 1774391619151,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -24567,6 +24567,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5757464,
             "range": "± 8225339.73",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "john.howard@solo.io",
+            "name": "John Howard",
+            "username": "howardjohn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d51cb71569bbca7927b3828ef11e3bec4fa97eb4",
+          "message": "feat(client): expose HTTP/2 current max stream count (#4026)\n\nPropogate https://github.com/hyperium/h2/pull/784 up to hyper interface\n\nRef https://github.com/hyperium/hyper/issues/3623",
+          "timestamp": "2026-03-24T16:56:56-04:00",
+          "tree_id": "cc1784f2a2af16d814725e22fb9444e3bac241fc",
+          "url": "https://github.com/dudw/hyper/commit/d51cb71569bbca7927b3828ef11e3bec4fa97eb4"
+        },
+        "date": 1774391617240,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 37119,
+            "range": "± 784.41",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 5713292,
+            "range": "± 791938.53",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 11682,
+            "range": "± 280.73",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 13608,
+            "range": "± 459.96",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 18459,
+            "range": "± 355.86",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 51832,
+            "range": "± 1732.39",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 41000207,
+            "range": "± 35816.75",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 63911,
+            "range": "± 1286.34",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 4464302,
+            "range": "± 79405.46",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 12802254,
+            "range": "± 141730.03",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 4414684,
+            "range": "± 67810.27",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 37148096,
+            "range": "± 2208996.63",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 44955009,
+            "range": "± 10445748.18",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 3900614,
+            "range": "± 4315895.24",
             "unit": "ns/iter"
           }
         ]
