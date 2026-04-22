@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776876307831,
+  "lastUpdate": 1776897069312,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7381,6 +7381,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 43501,
             "range": "± 6433.69",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "git@ulyssa.dev",
+            "name": "Ulyssa",
+            "username": "ulyssa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e5ad96b1c511b568f086100538586231628b1eab",
+          "message": "fix(http2): reading trailers shouldn't propagate `NO_ERROR` from early response (#3998)\n\nThis is the trailers variant of the fix for reading the body in #3275, so that it is possible to both attempt to read the body and the trailers when the server has sent a `RST_STREAM` with `NO_ERROR` after its response to indicate that the client should stop attempting to send it the body.\n\nI have added a trailers-only variant of `http2_responds_before_consuming_request_body` that fails without the fix, and also updated `http2_responds_before_consuming_request_body` to verify that it can check whether there are any trailers.",
+          "timestamp": "2026-04-22T14:40:55-07:00",
+          "tree_id": "4df8ad0de6f73e78efcdc8a1704c454df3753365",
+          "url": "https://github.com/dudw/hyper/commit/e5ad96b1c511b568f086100538586231628b1eab"
+        },
+        "date": 1776897068202,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 60206,
+            "range": "± 10468.00",
             "unit": "ns/iter"
           }
         ]
