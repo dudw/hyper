@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1777307482234,
+  "lastUpdate": 1777307591678,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -25227,6 +25227,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 3350639,
             "range": "± 38196.62",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b12f6525432e7fbe80b749fec26f8ed7723006fc",
+          "message": "fix(http1): fix reading large bodies on 32-bit systems (#4056)\n\nOn 32-bit systems, the cast of the length to read from a u64 to a usize could\ntruncate, and cause less to be read. If the length was larger than usize::MAX,\nthe end could not be read.\n\nTo fix this, we use a saturating cast pattern instead.\n\nCloses #4055",
+          "timestamp": "2026-04-27T08:31:58-04:00",
+          "tree_id": "9676be6da75583e70050c98f72641254f753dc0c",
+          "url": "https://github.com/dudw/hyper/commit/b12f6525432e7fbe80b749fec26f8ed7723006fc"
+        },
+        "date": 1777307589729,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 67695,
+            "range": "± 2245.93",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 7295775,
+            "range": "± 245675.18",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 20416,
+            "range": "± 400.84",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 22823,
+            "range": "± 1129.74",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 30014,
+            "range": "± 925.07",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 97796,
+            "range": "± 2819.84",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 40999952,
+            "range": "± 4884.68",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 83447,
+            "range": "± 1805.09",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 23847922,
+            "range": "± 8260827.23",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 32087316,
+            "range": "± 8397289.96",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7656098,
+            "range": "± 96234.88",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 50407832,
+            "range": "± 557192.88",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 51085978,
+            "range": "± 360478.04",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5392592,
+            "range": "± 53442.47",
             "unit": "ns/iter"
           }
         ]
