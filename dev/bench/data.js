@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776897204249,
+  "lastUpdate": 1777307482234,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7411,6 +7411,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 60206,
             "range": "± 10468.00",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b12f6525432e7fbe80b749fec26f8ed7723006fc",
+          "message": "fix(http1): fix reading large bodies on 32-bit systems (#4056)\n\nOn 32-bit systems, the cast of the length to read from a u64 to a usize could\ntruncate, and cause less to be read. If the length was larger than usize::MAX,\nthe end could not be read.\n\nTo fix this, we use a saturating cast pattern instead.\n\nCloses #4055",
+          "timestamp": "2026-04-27T08:31:58-04:00",
+          "tree_id": "9676be6da75583e70050c98f72641254f753dc0c",
+          "url": "https://github.com/dudw/hyper/commit/b12f6525432e7fbe80b749fec26f8ed7723006fc"
+        },
+        "date": 1777307480023,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 39727,
+            "range": "± 8368.81",
             "unit": "ns/iter"
           }
         ]
