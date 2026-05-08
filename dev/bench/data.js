@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1778279475176,
+  "lastUpdate": 1778279594851,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -25503,6 +25503,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5248781,
             "range": "± 61951.08",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lihan3238@163.com",
+            "name": "Li Duoyang",
+            "username": "lihan3238"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e9be344f16c8a996ccf3a9f69a66408437885f31",
+          "message": "docs(client): document Drop behavior for Connection types (#4064)\n\nExplain what happens when Connection is dropped: the underlying IO\nresource is closed and in-flight requests are interrupted. Suggest\npolling to completion for graceful shutdown.\n\nCloses #3192\n\nCo-authored-by: lihan3238 <lihan3238@users.noreply.github.com>",
+          "timestamp": "2026-05-08T14:36:35-04:00",
+          "tree_id": "b259f71adc591548fc897362adae56f7cea56b68",
+          "url": "https://github.com/dudw/hyper/commit/e9be344f16c8a996ccf3a9f69a66408437885f31"
+        },
+        "date": 1778279592981,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 68758,
+            "range": "± 774.67",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 3937694,
+            "range": "± 140012.86",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 20976,
+            "range": "± 3861.86",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 23518,
+            "range": "± 435.38",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 30879,
+            "range": "± 647.59",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 98621,
+            "range": "± 2021.67",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 41000031,
+            "range": "± 5203.67",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 83940,
+            "range": "± 1114.56",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 16121622,
+            "range": "± 16487841.82",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 7657689,
+            "range": "± 24508586.30",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7518864,
+            "range": "± 101439.22",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 50425315,
+            "range": "± 202273.36",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 50406302,
+            "range": "± 748874.45",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5223688,
+            "range": "± 74920.65",
             "unit": "ns/iter"
           }
         ]
