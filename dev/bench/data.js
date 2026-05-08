@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1777934009781,
+  "lastUpdate": 1778279475176,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7471,6 +7471,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 58596,
             "range": "± 12437.51",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lihan3238@163.com",
+            "name": "Li Duoyang",
+            "username": "lihan3238"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e9be344f16c8a996ccf3a9f69a66408437885f31",
+          "message": "docs(client): document Drop behavior for Connection types (#4064)\n\nExplain what happens when Connection is dropped: the underlying IO\nresource is closed and in-flight requests are interrupted. Suggest\npolling to completion for graceful shutdown.\n\nCloses #3192\n\nCo-authored-by: lihan3238 <lihan3238@users.noreply.github.com>",
+          "timestamp": "2026-05-08T14:36:35-04:00",
+          "tree_id": "b259f71adc591548fc897362adae56f7cea56b68",
+          "url": "https://github.com/dudw/hyper/commit/e9be344f16c8a996ccf3a9f69a66408437885f31"
+        },
+        "date": 1778279474024,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 53505,
+            "range": "± 9467.77",
             "unit": "ns/iter"
           }
         ]
