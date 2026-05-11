@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1778279594851,
+  "lastUpdate": 1778517707981,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7501,6 +7501,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 53505,
             "range": "± 9467.77",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "adg@adg.is",
+            "name": "Árni Dagur",
+            "username": "ArniDagur"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6c9182c4e566e716d23e7b54ce2c75e064a9213a",
+          "message": "feat(http2): Add 'header_table_size()' method to server builder (#4062)",
+          "timestamp": "2026-05-11T10:31:08-04:00",
+          "tree_id": "99991846526ac1e8410d19d80b6c1aafb1bd3af9",
+          "url": "https://github.com/dudw/hyper/commit/6c9182c4e566e716d23e7b54ce2c75e064a9213a"
+        },
+        "date": 1778517705112,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 59632,
+            "range": "± 12485.74",
             "unit": "ns/iter"
           }
         ]
