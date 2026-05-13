@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1778711469386,
+  "lastUpdate": 1778711606856,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -25917,6 +25917,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5396841,
             "range": "± 65958.71",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kimjune01@gmail.com",
+            "name": "June",
+            "username": "kimjune01"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "659e1e90142a4c5c05c6aa5813ec3b97863bcfaf",
+          "message": "docs(error): add detailed doc comments to Error query methods (#4065)\n\nAdd explanatory doc comments to is_parse, is_parse_too_large,\nis_parse_version_h2, is_user, is_canceled, is_closed,\nis_body_write_aborted, is_shutdown, and is_timeout. Each comment\nexplains what triggers the error and links to relevant builder\nmethods where applicable.",
+          "timestamp": "2026-05-13T15:27:02-04:00",
+          "tree_id": "0104a2f738c394fcc21dc6d15bcd2d50bd2e5282",
+          "url": "https://github.com/dudw/hyper/commit/659e1e90142a4c5c05c6aa5813ec3b97863bcfaf"
+        },
+        "date": 1778711605663,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 69004,
+            "range": "± 1487.64",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4225687,
+            "range": "± 242690.06",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 20973,
+            "range": "± 608.02",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 23322,
+            "range": "± 720.94",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 31195,
+            "range": "± 2779.15",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 104698,
+            "range": "± 5528.53",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 40999814,
+            "range": "± 7767.85",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 83627,
+            "range": "± 2343.14",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 15980162,
+            "range": "± 16428193.15",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 24419926,
+            "range": "± 8541492.46",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7584666,
+            "range": "± 107609.68",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 94000758,
+            "range": "± 1212396.06",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 53942653,
+            "range": "± 542967.22",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5202576,
+            "range": "± 56749.40",
             "unit": "ns/iter"
           }
         ]
