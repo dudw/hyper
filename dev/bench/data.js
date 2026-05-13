@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1778625205825,
+  "lastUpdate": 1778711469386,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7561,6 +7561,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 43168,
             "range": "± 7240.14",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kimjune01@gmail.com",
+            "name": "June",
+            "username": "kimjune01"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "659e1e90142a4c5c05c6aa5813ec3b97863bcfaf",
+          "message": "docs(error): add detailed doc comments to Error query methods (#4065)\n\nAdd explanatory doc comments to is_parse, is_parse_too_large,\nis_parse_version_h2, is_user, is_canceled, is_closed,\nis_body_write_aborted, is_shutdown, and is_timeout. Each comment\nexplains what triggers the error and links to relevant builder\nmethods where applicable.",
+          "timestamp": "2026-05-13T15:27:02-04:00",
+          "tree_id": "0104a2f738c394fcc21dc6d15bcd2d50bd2e5282",
+          "url": "https://github.com/dudw/hyper/commit/659e1e90142a4c5c05c6aa5813ec3b97863bcfaf"
+        },
+        "date": 1778711467387,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 66837,
+            "range": "± 13129.61",
             "unit": "ns/iter"
           }
         ]
