@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779251602093,
+  "lastUpdate": 1779316274985,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7621,6 +7621,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 47270,
             "range": "± 5494.50",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5dbcae72ba066ca8fddbe0a108f6f3591a7f68f7",
+          "message": "docs(lib): fixup markdown and grammar in doc comments (#4074)",
+          "timestamp": "2026-05-20T15:11:59-04:00",
+          "tree_id": "9ac7b1bb3237d80f008cd910ed109aea8ad74852",
+          "url": "https://github.com/dudw/hyper/commit/5dbcae72ba066ca8fddbe0a108f6f3591a7f68f7"
+        },
+        "date": 1779316273430,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 47622,
+            "range": "± 5856.85",
             "unit": "ns/iter"
           }
         ]
