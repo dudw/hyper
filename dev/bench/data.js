@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779489069365,
+  "lastUpdate": 1779489189445,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -26469,6 +26469,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5674335,
             "range": "± 98324.53",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cad38b7ba8e485e1200685e472fb4ffe54517840",
+          "message": "chore(lib): start a strict clippy config (#4075)\n\nThis starts a change to embrace a strict allowlist with Clippy.\n\n## Why?\n\nClippy can detect a lot of mistakes. The defaults are very good. But it has the\npower to detect many more _probable_ mistakes, and enforce coding patterns\nbeyond formatting. With the increase in LLM generated code, a stricter Clippy\ncan protect us from the LLM generating poorer code.\n\nThe pedantic and restriction groups are not enabled by default. There is even a\nwarning to not enable the restriction group blindly. But, even they have good\nlints. The usual recommendation is to just turn on the lints you care about.\n\nInstead, this embraces restricting everything by default, and keep an explicit\nallowlist. The benefits for this are that we explicitly consider every possible\n\"bad code\" lint. We decide if it's something to ignore. And we also don't\naccidentally not notice a new lint. Every time Clippy upgrades, we may see some\nnew lints that could improve our code. That is excellent! When that happens, we\ncan decide whether to adjust the code, or allow the lint.\n\n[More reading](https://billylevin.dev/posts/clippy-config/)\n\n## How?\n\nRestricting all these lints in one go would be a large amount of changes. Some\nof them can be done automatically (`cargo clippy --fix`), some of them an LLM\ncan very easily do, and some require manual inspection in each place.\n\nThis starts by enabling all the groups, listing out every lint that was\ntriggered, and then allows them explicitly for now. I've split that list into\ntwo separate smaller lists (described here in reverse order):\n\n- Lints that are expliticly allowed.\n\n- Lints that should be decided on, either by fixing the code, or removing the\n  TODO and putting them in the explicitly allowed list (ideally explaining why).\n\nFollow up commits can address those lints, and when doing so, update the list.\nThis will prevent rot from occurring by keeping the PR open for a long time, or\nconflicts.",
+          "timestamp": "2026-05-22T14:06:57-04:00",
+          "tree_id": "a946c3713f229269a401ce091af06210ad98b48c",
+          "url": "https://github.com/dudw/hyper/commit/cad38b7ba8e485e1200685e472fb4ffe54517840"
+        },
+        "date": 1779489188186,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 65978,
+            "range": "± 1439.47",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4257253,
+            "range": "± 432112.67",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 22665,
+            "range": "± 259.12",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 23932,
+            "range": "± 471.24",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 28419,
+            "range": "± 587.52",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 91789,
+            "range": "± 4057.69",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 40999862,
+            "range": "± 4495.32",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 79269,
+            "range": "± 2457.84",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 16436364,
+            "range": "± 16536777.51",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 24803763,
+            "range": "± 12856559.30",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7911748,
+            "range": "± 122055.48",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 55346745,
+            "range": "± 532050.93",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 58239432,
+            "range": "± 835319.95",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5592525,
+            "range": "± 79652.71",
             "unit": "ns/iter"
           }
         ]
