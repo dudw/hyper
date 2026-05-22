@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779316458465,
+  "lastUpdate": 1779467471723,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7651,6 +7651,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 47622,
             "range": "± 5856.85",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7bb1d03a4ef8fbff6cb4d78336ee66ee2b3de5f3",
+          "message": "chore(ci): fix security-audit job (#4076)",
+          "timestamp": "2026-05-22T12:02:57-04:00",
+          "tree_id": "fa979097552ee8d3e143ff8421081ddfb34b5b80",
+          "url": "https://github.com/dudw/hyper/commit/7bb1d03a4ef8fbff6cb4d78336ee66ee2b3de5f3"
+        },
+        "date": 1779467470435,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 58096,
+            "range": "± 13077.90",
             "unit": "ns/iter"
           }
         ]
