@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779489189445,
+  "lastUpdate": 1779813085232,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7711,6 +7711,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 47663,
             "range": "± 5928.56",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3cc115854e660496d28c1367ad10c066391c16bb",
+          "message": "test(client): fix misuse of path_and_query in CONNECT test (#4078)",
+          "timestamp": "2026-05-26T09:19:22-04:00",
+          "tree_id": "4d4bda8d085603bc3d14254e8377407217d3e439",
+          "url": "https://github.com/dudw/hyper/commit/3cc115854e660496d28c1367ad10c066391c16bb"
+        },
+        "date": 1779813082588,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 44404,
+            "range": "± 5891.27",
             "unit": "ns/iter"
           }
         ]
