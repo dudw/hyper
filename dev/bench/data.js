@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779813085232,
+  "lastUpdate": 1779813221417,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -26607,6 +26607,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5592525,
             "range": "± 79652.71",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3cc115854e660496d28c1367ad10c066391c16bb",
+          "message": "test(client): fix misuse of path_and_query in CONNECT test (#4078)",
+          "timestamp": "2026-05-26T09:19:22-04:00",
+          "tree_id": "4d4bda8d085603bc3d14254e8377407217d3e439",
+          "url": "https://github.com/dudw/hyper/commit/3cc115854e660496d28c1367ad10c066391c16bb"
+        },
+        "date": 1779813220093,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 67568,
+            "range": "± 1340.23",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4135424,
+            "range": "± 279669.13",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 20576,
+            "range": "± 291.85",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 22810,
+            "range": "± 350.04",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 29909,
+            "range": "± 602.38",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 98736,
+            "range": "± 3179.14",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 40999861,
+            "range": "± 5602.96",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 83715,
+            "range": "± 1389.91",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 15972525,
+            "range": "± 16504833.71",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 23997004,
+            "range": "± 8510835.70",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 8019311,
+            "range": "± 164436.47",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 93792272,
+            "range": "± 808898.98",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 50262399,
+            "range": "± 725718.28",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5253391,
+            "range": "± 88794.30",
             "unit": "ns/iter"
           }
         ]
