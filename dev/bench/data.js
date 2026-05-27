@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779813221417,
+  "lastUpdate": 1779899479513,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7741,6 +7741,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 44404,
             "range": "± 5891.27",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "distinct": true,
+          "id": "54e8511d5fb25e7db3fd766a403826d4946af5b6",
+          "message": "v1.10.0",
+          "timestamp": "2026-05-27T10:21:54-04:00",
+          "tree_id": "ddae185131fb06aba65b62a2d6b93ce394bee8e1",
+          "url": "https://github.com/dudw/hyper/commit/54e8511d5fb25e7db3fd766a403826d4946af5b6"
+        },
+        "date": 1779899478162,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 47101,
+            "range": "± 5622.50",
             "unit": "ns/iter"
           }
         ]
