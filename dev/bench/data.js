@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1780137207977,
+  "lastUpdate": 1780158668734,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7831,6 +7831,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 64572,
             "range": "± 16325.97",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "32043000+josetorrs@users.noreply.github.com",
+            "name": "Jose",
+            "username": "josetorrs"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1f453654274f166d7be7b0a63fe9f31bea521c22",
+          "message": "style(rt): removing empty_structs_with_brackets lint (#4088)",
+          "timestamp": "2026-05-30T07:30:32-04:00",
+          "tree_id": "0f57192084b72ad530527483b5cee76da6f7996f",
+          "url": "https://github.com/dudw/hyper/commit/1f453654274f166d7be7b0a63fe9f31bea521c22"
+        },
+        "date": 1780158667194,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 57173,
+            "range": "± 11607.39",
             "unit": "ns/iter"
           }
         ]
