@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1780093985006,
+  "lastUpdate": 1780137063302,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7801,6 +7801,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 66101,
             "range": "± 12973.54",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "danielmckenna93@gmail.com",
+            "name": "xd009642",
+            "username": "xd009642"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "92b6edc671e6b441531dcc880a50d835da7f5308",
+          "message": "style(rt): Fix the borrow_as_ptr lint (#4082)",
+          "timestamp": "2026-05-30T06:27:29-04:00",
+          "tree_id": "f69f8d708d1c8acf60f67fc117de3ee397078b67",
+          "url": "https://github.com/dudw/hyper/commit/92b6edc671e6b441531dcc880a50d835da7f5308"
+        },
+        "date": 1780137061471,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 64572,
+            "range": "± 16325.97",
             "unit": "ns/iter"
           }
         ]
