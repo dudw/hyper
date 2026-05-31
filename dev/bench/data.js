@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1780202030971,
+  "lastUpdate": 1780245200316,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7891,6 +7891,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 43444,
             "range": "± 5613.71",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "32043000+josetorrs@users.noreply.github.com",
+            "name": "Jose",
+            "username": "josetorrs"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9d85b88095e361d0c6cc606cfd64dad6bae1d23e",
+          "message": "style(lib): remove manual_assert_eq lint (#4090)",
+          "timestamp": "2026-05-31T09:11:00-04:00",
+          "tree_id": "5cd1b085d01aa59b193e7be266fbcbd9eda6a3df",
+          "url": "https://github.com/dudw/hyper/commit/9d85b88095e361d0c6cc606cfd64dad6bae1d23e"
+        },
+        "date": 1780245198022,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 57943,
+            "range": "± 12529.47",
             "unit": "ns/iter"
           }
         ]
