@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1780331629333,
+  "lastUpdate": 1780353070074,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7951,6 +7951,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 38171,
             "range": "± 10247.73",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b80c77db42509c2c3a17e1fb5a0998b404ef8dac",
+          "message": "style(http2): use an enum instead of bool in strip_connection_headers() (#4094)",
+          "timestamp": "2026-06-01T14:38:32-04:00",
+          "tree_id": "dde3fa0c6320492d008efb084a3f8bcca4bfd30e",
+          "url": "https://github.com/dudw/hyper/commit/b80c77db42509c2c3a17e1fb5a0998b404ef8dac"
+        },
+        "date": 1780353068769,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 43817,
+            "range": "± 5968.71",
             "unit": "ns/iter"
           }
         ]
