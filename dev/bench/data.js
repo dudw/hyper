@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1780245327629,
+  "lastUpdate": 1780331480530,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7921,6 +7921,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 57943,
             "range": "± 12529.47",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lorishu2412045439@gmail.com",
+            "name": "Lori-Shu",
+            "username": "Lori-Shu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4df4607b35632b4228bda5f13852f11a396dfc11",
+          "message": "style(lib); fix 'undocumented_unsafe_blocks' lint (#4083)\n\nAll uses of `unsafe` now include a SAFETY comment.",
+          "timestamp": "2026-06-01T11:19:19-04:00",
+          "tree_id": "dba50f78c1e9f9820cef5025c0c4a2a0b8453887",
+          "url": "https://github.com/dudw/hyper/commit/4df4607b35632b4228bda5f13852f11a396dfc11"
+        },
+        "date": 1780331477869,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 38171,
+            "range": "± 10247.73",
             "unit": "ns/iter"
           }
         ]
