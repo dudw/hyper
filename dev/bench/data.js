@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1780353234789,
+  "lastUpdate": 1780417883919,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -7981,6 +7981,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 43817,
             "range": "± 5968.71",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "90ede307470dba98b4e184ad88d6f5aae8b0afd7",
+          "message": "fix(http1): more strictly enforce max_buf_size when parsing (#4093)\n\nCloses #4081",
+          "timestamp": "2026-06-02T11:55:04-04:00",
+          "tree_id": "ff845819a1cb95170d411fec45b4fdec7dcf6621",
+          "url": "https://github.com/dudw/hyper/commit/90ede307470dba98b4e184ad88d6f5aae8b0afd7"
+        },
+        "date": 1780417881392,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 35901,
+            "range": "± 8472.39",
             "unit": "ns/iter"
           }
         ]
