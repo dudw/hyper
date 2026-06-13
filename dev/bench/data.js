@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1781217192118,
+  "lastUpdate": 1781368269526,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -8041,6 +8041,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 43877,
             "range": "± 6552.87",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "128471892+nakaryo716@users.noreply.github.com",
+            "name": "Nakaryo",
+            "username": "nakaryo716"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e64ad1e1b37f2d60d963ac9c0259b46fae3084d5",
+          "message": "style(http1): remove ref_option lint (#4101)\n\nRemove `ref_option = \"allow\"` from Cargo.toml and change the server\nmethods to take `Option<&Method>` instead of `&Option<Method>`.",
+          "timestamp": "2026-06-13T07:57:21-04:00",
+          "tree_id": "e53baaa30907648b8b1669bad70dcb2710cb2859",
+          "url": "https://github.com/dudw/hyper/commit/e64ad1e1b37f2d60d963ac9c0259b46fae3084d5"
+        },
+        "date": 1781368267461,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 63046,
+            "range": "± 12936.75",
             "unit": "ns/iter"
           }
         ]
