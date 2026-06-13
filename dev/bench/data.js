@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1781368269526,
+  "lastUpdate": 1781368407701,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -28125,6 +28125,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5168570,
             "range": "± 182247.02",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "128471892+nakaryo716@users.noreply.github.com",
+            "name": "Nakaryo",
+            "username": "nakaryo716"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e64ad1e1b37f2d60d963ac9c0259b46fae3084d5",
+          "message": "style(http1): remove ref_option lint (#4101)\n\nRemove `ref_option = \"allow\"` from Cargo.toml and change the server\nmethods to take `Option<&Method>` instead of `&Option<Method>`.",
+          "timestamp": "2026-06-13T07:57:21-04:00",
+          "tree_id": "e53baaa30907648b8b1669bad70dcb2710cb2859",
+          "url": "https://github.com/dudw/hyper/commit/e64ad1e1b37f2d60d963ac9c0259b46fae3084d5"
+        },
+        "date": 1781368406360,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 62358,
+            "range": "± 654.10",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4162531,
+            "range": "± 66981.76",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 22544,
+            "range": "± 561.68",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 24168,
+            "range": "± 12523.05",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 28559,
+            "range": "± 357.21",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 91540,
+            "range": "± 2096.90",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 41000006,
+            "range": "± 3732.51",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 79634,
+            "range": "± 1380.67",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 16459197,
+            "range": "± 16528888.78",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 8052770,
+            "range": "± 148489.72",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 8095589,
+            "range": "± 190722.71",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 76248594,
+            "range": "± 8518948.32",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 55452433,
+            "range": "± 730644.49",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5591019,
+            "range": "± 43250.42",
             "unit": "ns/iter"
           }
         ]
