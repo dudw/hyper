@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1782253871656,
+  "lastUpdate": 1782254003146,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -28677,6 +28677,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5317256,
             "range": "± 145017.28",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aecf5abfbc3dc95f21ac1538db1aa3f690fa6ab6",
+          "message": "fix(http2): avoid buffering `Upgraded` writes without send capacity (#4102)\n\n* fix(h2): return Poll::Pending when poll_capacity is not ready in UpgradedSendStreamTask\n\nFix a backpressure bypass bug in UpgradedSendStreamTask::tick() where\npoll_capacity() returning Poll::Pending caused a 'break 'capacity' that\nfell through to rx.poll_next() -> send_data(), pushing data into the h2\nsend buffer without available capacity. This broke the HTTP/2 flow\ncontrol chain, causing unbounded memory growth (OOM) when downstream\nconsumers were slower than upstream producers.\n\nThe fix changes 'break 'capacity' to 'return Poll::Pending', which\ncorrectly suspends the task until a WINDOW_UPDATE frame restores send\ncapacity. The now-unused 'capacity label is also removed.\n\nThis bug was introduced in hyper v1.8.0 (PR #3967) and affects\nv1.8.0, v1.8.1, and v1.9.0. A single HTTP/2 CONNECT tunnel with\nasymmetric upstream/downstream speeds could trigger OOM within seconds.\n\nAdd four integration tests covering H2 CONNECT backpressure scenarios:\n- h2_connect_backpressure_respected: small window + large data transfer\n- h2_connect_zero_window_then_release: normal path regression guard\n- h2_connect_reset_during_backpressure: RST_STREAM error propagation\n- h2_connect_backpressure_bidirectional: bidirectional data + backpressure\n\n* refactor(h2): check poll_reset before returning Pending on capacity wait\n\nWhen poll_capacity returns Pending, defer the return and check\npoll_reset first. This ensures the reset waker is registered via\npoll_reset (which shares the same send_task slot in h2 internally),\nenabling earlier RST_STREAM detection without an extra poll round-trip.\n\nWhile h2 internally calls notify_send() on RST_STREAM/EOF/error\n(so poll_capacity's waker alone would eventually be woken), polling\npoll_reset here provides immediate detection if RST_STREAM has\nalready arrived, avoiding one unnecessary suspend/wake cycle.\n\nThe h2_has_capacity flag cleanly separates the capacity check from\nthe control flow, making the manual select-over-3-futures pattern\nmore readable.\n\nCo-authored-by: sunhuanran <sunhuanran@bytedance.com>",
+          "timestamp": "2026-06-23T16:01:19-04:00",
+          "tree_id": "403c7b4baca733fb6c67f37d73caabc7f5e1ec9a",
+          "url": "https://github.com/dudw/hyper/commit/aecf5abfbc3dc95f21ac1538db1aa3f690fa6ab6"
+        },
+        "date": 1782254000925,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 78661,
+            "range": "± 9550.89",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4169619,
+            "range": "± 190065.06",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 20894,
+            "range": "± 363.40",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 22895,
+            "range": "± 565.12",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 30382,
+            "range": "± 935.49",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 105394,
+            "range": "± 2835.29",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 40999666,
+            "range": "± 8018.28",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 82273,
+            "range": "± 2205.88",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 16156842,
+            "range": "± 16445587.51",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 7818240,
+            "range": "± 85980.06",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7631231,
+            "range": "± 159190.37",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 92594084,
+            "range": "± 1606308.32",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 53289923,
+            "range": "± 1203397.89",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5436803,
+            "range": "± 69240.31",
             "unit": "ns/iter"
           }
         ]
