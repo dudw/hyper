@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1782448385410,
+  "lastUpdate": 1782750673633,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -8221,6 +8221,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 50761,
             "range": "± 7989.01",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "32043000+josetorrs@users.noreply.github.com",
+            "name": "Jose",
+            "username": "josetorrs"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e0d14d19a0a87962efe92acdaa029253be54a612",
+          "message": "style(proto): explicitly allow `decimal_literal_representation` lint (#4117)\n\nFor readability purposes.\n\nFor instance, 65_535 is more readable than 0xFFFF, when the spec uses doesn't use hexadecimal in that case.",
+          "timestamp": "2026-06-29T12:07:30-04:00",
+          "tree_id": "82d40b222c10174132422c28cfb69e807020e91b",
+          "url": "https://github.com/dudw/hyper/commit/e0d14d19a0a87962efe92acdaa029253be54a612"
+        },
+        "date": 1782750671787,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 58496,
+            "range": "± 12015.42",
             "unit": "ns/iter"
           }
         ]
