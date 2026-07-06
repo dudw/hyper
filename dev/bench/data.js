@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783355590168,
+  "lastUpdate": 1783377074807,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -8281,6 +8281,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 36550,
             "range": "± 4488.30",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0ea8bc2772bbe785d7234e3eb3bd4df5440f57fb",
+          "message": "docs(maintainers): move some collaborators to emeriti (#4125)",
+          "timestamp": "2026-07-06T13:30:01-04:00",
+          "tree_id": "9cb1bce068147ca20ac1938c1963ab181fba5d3f",
+          "url": "https://github.com/dudw/hyper/commit/0ea8bc2772bbe785d7234e3eb3bd4df5440f57fb"
+        },
+        "date": 1783377071930,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 62178,
+            "range": "± 12412.08",
             "unit": "ns/iter"
           }
         ]
