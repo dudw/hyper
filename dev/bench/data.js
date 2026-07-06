@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783355472075,
+  "lastUpdate": 1783355590168,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -29091,6 +29091,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5838852,
             "range": "± 62193.35",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2fc06fc7724e2b684c2658327f0721fd3bfa57d9",
+          "message": "docs(governance): define Advisor role (#4098)\n\nA way for busy experts to still contribute advice when needed.",
+          "timestamp": "2026-07-06T11:53:21-04:00",
+          "tree_id": "4c6a89be9499d77c6e4c7e16c6cca0fab6cda1a8",
+          "url": "https://github.com/dudw/hyper/commit/2fc06fc7724e2b684c2658327f0721fd3bfa57d9"
+        },
+        "date": 1783355588785,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 62994,
+            "range": "± 781.22",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4344968,
+            "range": "± 424621.23",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 23444,
+            "range": "± 404.24",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 24635,
+            "range": "± 537.42",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 29263,
+            "range": "± 521.06",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 96774,
+            "range": "± 4586.99",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 41000171,
+            "range": "± 40437.93",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 78205,
+            "range": "± 767.74",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 16834627,
+            "range": "± 16365464.34",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 8504577,
+            "range": "± 1010551.62",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 8417517,
+            "range": "± 103190.21",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 58160323,
+            "range": "± 182201.50",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 59940605,
+            "range": "± 491314.69",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5981745,
+            "range": "± 80964.37",
             "unit": "ns/iter"
           }
         ]
