@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783377207568,
+  "lastUpdate": 1783441880310,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -8311,6 +8311,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 62178,
             "range": "± 12412.08",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "satsyndicate@gmail.com",
+            "name": "Abhinav",
+            "username": "abh1nav10"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ccc1e850dc0cda3e71b0acd11f60ca3d48d09034",
+          "message": "feat(rt): add `ReadBufCursor::initialized_unfilled()` method (#4115)",
+          "timestamp": "2026-07-07T11:14:34-04:00",
+          "tree_id": "e98bf4ecc89b6bea4dfbc7899fe44c484b712cf7",
+          "url": "https://github.com/dudw/hyper/commit/ccc1e850dc0cda3e71b0acd11f60ca3d48d09034"
+        },
+        "date": 1783441878537,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 57573,
+            "range": "± 13818.87",
             "unit": "ns/iter"
           }
         ]
