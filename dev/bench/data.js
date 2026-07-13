@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783958879460,
+  "lastUpdate": 1783958985991,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -29505,6 +29505,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5417066,
             "range": "± 100566.30",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "540fff9180ce47ee5fab01b6cc2126eb6c286eda",
+          "message": "fix(http1): discard content-length header when received before transfer-encoding (#4124)\n\nWhile hyper currently recognizes the correct message payload semantics when both\ncontent-length and transfer-encoding headers are sent, there are cases where it\ndoesn't always strip the canceled content-length header.\n\nThis fix now correctly removes the header if it was seen before transfer-encoding.\n\nIt also now sets the connection to close at the end of the message, as\nrecommended in the new RFC 9112.\n\n(To be clear, the semantics have always been correct. This reduces the possibility\nof forwarding confusing headers to a remote that doesn't know how to act correctly.)\n\nCloses #4123",
+          "timestamp": "2026-07-13T10:56:37-04:00",
+          "tree_id": "7037d03b04b98215b2d6e7094dcb9de5c5bdc13f",
+          "url": "https://github.com/dudw/hyper/commit/540fff9180ce47ee5fab01b6cc2126eb6c286eda"
+        },
+        "date": 1783958983718,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 71008,
+            "range": "± 2376.63",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4184160,
+            "range": "± 123411.50",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 21725,
+            "range": "± 597.93",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 24204,
+            "range": "± 674.79",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 31777,
+            "range": "± 681.66",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 101833,
+            "range": "± 3635.94",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 41000019,
+            "range": "± 53502.64",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 81896,
+            "range": "± 3700.32",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 16304926,
+            "range": "± 16354754.81",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 7987131,
+            "range": "± 26303592.40",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7805433,
+            "range": "± 70397.19",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 53246278,
+            "range": "± 1764836.82",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 53833978,
+            "range": "± 1506873.29",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5588049,
+            "range": "± 65459.77",
             "unit": "ns/iter"
           }
         ]
