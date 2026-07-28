@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785277875475,
+  "lastUpdate": 1785278011220,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -29781,6 +29781,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5474982,
             "range": "± 60969.66",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "slandfried@bignerdranch.com",
+            "name": "Sam Landfried",
+            "username": "samlandfried"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "da19be08f34d3da01c4c0f9cfe2837e7d377f73d",
+          "message": "fix(http1): evict pooled conn on request-side Connection: close (#4110)\n\nhyper's client derives connection reuse from the response alone, so a\nrequest carrying `Connection: close` whose backend response omits it\n(keeps the socket alive) leaves the connection pooled and reusable.\nDisable keep-alive at request-encode time when the outgoing request\ncarries a `Connection: close` token so the connection is evicted\nregardless of the response.\n\nEvery `Connection` header line is inspected via a `connection_any_close`\nhelper (over `get_all`), not just the first, so a `close` on a later\nline or within a comma-separated value is honored.\n\nAdds a conn-level regression test (client Conn + write_head) asserting a\n`Connection: close` request disables keep-alive -- including\ncomma-separated and multi-line forms -- while a keep-alive request stays\nreusable.\n\nCo-authored-by: Sam Landfried <samlland@amazon.com>",
+          "timestamp": "2026-07-28T17:16:32-04:00",
+          "tree_id": "1fe8379d6916785651649cc180717c25ff74ed90",
+          "url": "https://github.com/dudw/hyper/commit/da19be08f34d3da01c4c0f9cfe2837e7d377f73d"
+        },
+        "date": 1785278009016,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 38542,
+            "range": "± 471.18",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4145475,
+            "range": "± 88918.34",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 12422,
+            "range": "± 238.09",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 14247,
+            "range": "± 351.57",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 19313,
+            "range": "± 604.73",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 55541,
+            "range": "± 1050.47",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 40999795,
+            "range": "± 11579.83",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 64981,
+            "range": "± 1058.46",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 12954606,
+            "range": "± 16483877.08",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 25340185,
+            "range": "± 16676715.56",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 4561628,
+            "range": "± 100048.64",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 35581323,
+            "range": "± 640472.84",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 35287220,
+            "range": "± 1218439.78",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 3662260,
+            "range": "± 31193.38",
             "unit": "ns/iter"
           }
         ]
