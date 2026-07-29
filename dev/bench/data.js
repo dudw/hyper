@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785278011220,
+  "lastUpdate": 1785299474011,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -8431,6 +8431,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 58938,
             "range": "± 12527.27",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "116a9dfec5e38bd77993dac9b61520a29d002321",
+          "message": "test(http1): rewrite disabled old 0.1-futures conn tests (#4138)",
+          "timestamp": "2026-07-28T18:46:30-04:00",
+          "tree_id": "023a60b4f228d5696c22fa224152139fb732a936",
+          "url": "https://github.com/dudw/hyper/commit/116a9dfec5e38bd77993dac9b61520a29d002321"
+        },
+        "date": 1785299472538,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 43672,
+            "range": "± 6741.59",
             "unit": "ns/iter"
           }
         ]
