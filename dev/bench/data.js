@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785299593698,
+  "lastUpdate": 1785537082791,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -8461,6 +8461,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 43672,
             "range": "± 6741.59",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "91108185+Catwoman08@users.noreply.github.com",
+            "name": "Catwoman08",
+            "username": "Catwoman08"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "084473f728f9d07b3be5845475aa2f62ed9ff579",
+          "message": "docs(contrib): update CONTRIBUTING.md (#4140)",
+          "timestamp": "2026-07-31T14:21:38-04:00",
+          "tree_id": "69b712b8ec3bf78368528a26b8d0dc19f20cbfb7",
+          "url": "https://github.com/dudw/hyper/commit/084473f728f9d07b3be5845475aa2f62ed9ff579"
+        },
+        "date": 1785537081208,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 42479,
+            "range": "± 5349.33",
             "unit": "ns/iter"
           }
         ]
