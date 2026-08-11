@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786379631976,
+  "lastUpdate": 1786444274103,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -8551,6 +8551,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 56065,
             "range": "± 13590.21",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "72fcf545c9b4a261f31d89bafd3019a2d4e9e1d7",
+          "message": "fix(http1): detect TE: trailers caselessly and with other values (#4152)",
+          "timestamp": "2026-08-11T07:16:47Z",
+          "tree_id": "41be8370cf91b722bb18cbf621ff41c415ce9581",
+          "url": "https://github.com/dudw/hyper/commit/72fcf545c9b4a261f31d89bafd3019a2d4e9e1d7"
+        },
+        "date": 1786444271574,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 44546,
+            "range": "± 6746.49",
             "unit": "ns/iter"
           }
         ]
