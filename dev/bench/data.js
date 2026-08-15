@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786811476599,
+  "lastUpdate": 1786811602755,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -30747,6 +30747,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5975021,
             "range": "± 102884.22",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "129399053+MsfPablo@users.noreply.github.com",
+            "name": "MsfPablo",
+            "username": "MsfPablo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d32b294f0bd0320df96c37d39a3047219ab0d7ae",
+          "message": "style(lib): fix needless_continue lint (#4157)",
+          "timestamp": "2026-08-15T19:53:09+08:00",
+          "tree_id": "4904be2b26456a2b1e27b05cae8998fa72619da1",
+          "url": "https://github.com/dudw/hyper/commit/d32b294f0bd0320df96c37d39a3047219ab0d7ae"
+        },
+        "date": 1786811601101,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 63405,
+            "range": "± 850.58",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4289648,
+            "range": "± 372209.04",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 23600,
+            "range": "± 193.81",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 24740,
+            "range": "± 301.06",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 29507,
+            "range": "± 492.38",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 96863,
+            "range": "± 1587.27",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 40999853,
+            "range": "± 4367.45",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 76776,
+            "range": "± 1631.86",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 33183985,
+            "range": "± 16496822.08",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 8571127,
+            "range": "± 89929.82",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 24823878,
+            "range": "± 8276370.40",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 59395298,
+            "range": "± 617585.58",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 60042484,
+            "range": "± 2044081.65",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5983920,
+            "range": "± 86840.42",
             "unit": "ns/iter"
           }
         ]
