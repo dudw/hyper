@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786552389774,
+  "lastUpdate": 1786811476599,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -8611,6 +8611,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 42807,
             "range": "± 6879.85",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "129399053+MsfPablo@users.noreply.github.com",
+            "name": "MsfPablo",
+            "username": "MsfPablo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d32b294f0bd0320df96c37d39a3047219ab0d7ae",
+          "message": "style(lib): fix needless_continue lint (#4157)",
+          "timestamp": "2026-08-15T19:53:09+08:00",
+          "tree_id": "4904be2b26456a2b1e27b05cae8998fa72619da1",
+          "url": "https://github.com/dudw/hyper/commit/d32b294f0bd0320df96c37d39a3047219ab0d7ae"
+        },
+        "date": 1786811473623,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 58692,
+            "range": "± 13952.11",
             "unit": "ns/iter"
           }
         ]
