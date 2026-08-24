@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1787006040503,
+  "lastUpdate": 1787589082590,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -8671,6 +8671,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 39646,
             "range": "± 12712.66",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8b2e533253cf3acaadd85d3c05c93b3be2205d43",
+          "message": "style(lib): temporarily allow some new clippy lints (#4165)",
+          "timestamp": "2026-08-24T08:09:52-04:00",
+          "tree_id": "15d528074768883c5128ee82bd8a15f2383b1b3b",
+          "url": "https://github.com/dudw/hyper/commit/8b2e533253cf3acaadd85d3c05c93b3be2205d43"
+        },
+        "date": 1787589080450,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 59208,
+            "range": "± 12754.29",
             "unit": "ns/iter"
           }
         ]
