@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1787589206261,
+  "lastUpdate": 1787697080964,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -8701,6 +8701,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 59208,
             "range": "± 12754.29",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "08a288135fb66321940b07ac15f3b9b8e46bc861",
+          "message": "docs(contrib): add initial COLLABORATORS guide (#4158)",
+          "timestamp": "2026-08-25T14:35:05-04:00",
+          "tree_id": "163bc7b64460e21807fe9d17969f33c4f641219a",
+          "url": "https://github.com/dudw/hyper/commit/08a288135fb66321940b07ac15f3b9b8e46bc861"
+        },
+        "date": 1787697079560,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 52395,
+            "range": "± 11275.40",
             "unit": "ns/iter"
           }
         ]
