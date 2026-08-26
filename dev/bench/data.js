@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1787697200258,
+  "lastUpdate": 1787762426057,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -8731,6 +8731,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 52395,
             "range": "± 11275.40",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tangyan01@loongson.cn",
+            "name": "tangaac",
+            "username": "tangaac"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "37c9d0c7e018d3c218f1fc0e472207ff05ef3772",
+          "message": "style(lib): remove lints that have been removed in newer clippy (#4167)\n\nThe following lints no longer exist in recent clippy versions and cause\n`unknown lint` errors (promoted to errors by `-D warnings` / `-W unknown-lints`):\n\n- clippy::unnecessary_rest_pattern\n- clippy::rest_pattern_accessible_field\n- clippy::definition_in_module_root\n\nRemove them from the allowed lints list in Cargo.toml.",
+          "timestamp": "2026-08-26T08:22:52-04:00",
+          "tree_id": "8e3d027cff300832165a08c42518a5ddfd90f69f",
+          "url": "https://github.com/dudw/hyper/commit/37c9d0c7e018d3c218f1fc0e472207ff05ef3772"
+        },
+        "date": 1787762424724,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 58504,
+            "range": "± 12632.45",
             "unit": "ns/iter"
           }
         ]
