@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1787934823187,
+  "lastUpdate": 1788021080157,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -8791,6 +8791,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 58580,
             "range": "± 12221.49",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "61588545+dox4@users.noreply.github.com",
+            "name": "dox4",
+            "username": "dox4"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7611e61209123a558abac2923c8aa6372fa04935",
+          "message": "style(lib): replace single-character lifetime names with descriptive names (#4173)",
+          "timestamp": "2026-08-30T00:12:04+08:00",
+          "tree_id": "5d82bdf047fe4c04d7e08abeb8c725e4ca6d96ab",
+          "url": "https://github.com/dudw/hyper/commit/7611e61209123a558abac2923c8aa6372fa04935"
+        },
+        "date": 1788021078258,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 56940,
+            "range": "± 14488.09",
             "unit": "ns/iter"
           }
         ]
