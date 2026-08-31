@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788021207799,
+  "lastUpdate": 1788172273581,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -8821,6 +8821,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 56940,
             "range": "± 14488.09",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "128471892+nakaryo716@users.noreply.github.com",
+            "name": "Nakaryo",
+            "username": "nakaryo716"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "203e4c7f5d64ecfed41a97bba2836c6e32511c2b",
+          "message": "style(lib): resolve collapsible_match lint (#4178)",
+          "timestamp": "2026-08-31T17:29:17+08:00",
+          "tree_id": "d429397b38c8c7ec923bd10bf59335ae6d297627",
+          "url": "https://github.com/dudw/hyper/commit/203e4c7f5d64ecfed41a97bba2836c6e32511c2b"
+        },
+        "date": 1788172272199,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 60165,
+            "range": "± 10636.37",
             "unit": "ns/iter"
           }
         ]
