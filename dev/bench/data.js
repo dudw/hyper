@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788172442855,
+  "lastUpdate": 1788301878001,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -8851,6 +8851,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 60165,
             "range": "± 10636.37",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4f36f33a28709f93d693bc9f942b93b54d7032a4",
+          "message": "docs(hips): hyper improvement proposals (#4131)",
+          "timestamp": "2026-09-01T16:47:00-04:00",
+          "tree_id": "794abe43322de432eb06f5ac266e1b3ca959d1c5",
+          "url": "https://github.com/dudw/hyper/commit/4f36f33a28709f93d693bc9f942b93b54d7032a4"
+        },
+        "date": 1788301876412,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 42547,
+            "range": "± 6237.96",
             "unit": "ns/iter"
           }
         ]
