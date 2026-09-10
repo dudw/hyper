@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788971617777,
+  "lastUpdate": 1789079483919,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -8941,6 +8941,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 53223,
             "range": "± 9580.58",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "gngppz@gmail.com",
+            "name": "0x676e67",
+            "username": "0x676e67"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c9f0165fec729c5b7af862f8960a3fdfc3066572",
+          "message": "chore(dependencies): remove unused futures-channel from http1 feature (#4185)",
+          "timestamp": "2026-09-10T21:34:11Z",
+          "tree_id": "e021950bd11744f59fd63efe473c90a35abb098b",
+          "url": "https://github.com/dudw/hyper/commit/c9f0165fec729c5b7af862f8960a3fdfc3066572"
+        },
+        "date": 1789079481229,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 54900,
+            "range": "± 12489.97",
             "unit": "ns/iter"
           }
         ]
