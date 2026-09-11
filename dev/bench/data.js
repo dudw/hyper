@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1789079625920,
+  "lastUpdate": 1789122663669,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -8971,6 +8971,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 54900,
             "range": "± 12489.97",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tottotodev@gmail.com",
+            "name": "tottoto",
+            "username": "tottoto"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "83da75a6bdea754643422243c044cba790eb8019",
+          "message": "chore(ci): update to cargo-check-external-types 0.5.0 (#4189)",
+          "timestamp": "2026-09-11T16:27:39+08:00",
+          "tree_id": "01cd56306b024b2d73c17a29930140df10b14160",
+          "url": "https://github.com/dudw/hyper/commit/83da75a6bdea754643422243c044cba790eb8019"
+        },
+        "date": 1789122661530,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 31139,
+            "range": "± 3598.43",
             "unit": "ns/iter"
           }
         ]
