@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1789511466111,
+  "lastUpdate": 1789511603800,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -32679,6 +32679,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 3429118,
             "range": "± 40196.45",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dtolnay@gmail.com",
+            "name": "David Tolnay",
+            "username": "dtolnay"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "74a39081ff1496970fb75da75c5282b23a9b69e5",
+          "message": "fix(http1): preserve hop-by-hop when setting close or keep-alive (#4196)\n\nThis adjusts https://github.com/hyperium/hyper/pull/4110 to use `append` instead of `insert` when a nonzero number of \"connection\" headers are already present, and only if none of the existing headers already include the value being added.\n\nFixes https://github.com/hyperium/hyper/issues/4195",
+          "timestamp": "2026-09-15T15:14:50-04:00",
+          "tree_id": "cd03520e1e888700cecabd8d5e32e4cc3d3a030f",
+          "url": "https://github.com/dudw/hyper/commit/74a39081ff1496970fb75da75c5282b23a9b69e5"
+        },
+        "date": 1789511601646,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 67811,
+            "range": "± 2310.92",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4115981,
+            "range": "± 204632.26",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 21455,
+            "range": "± 5547.74",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 23020,
+            "range": "± 402.62",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 30985,
+            "range": "± 492.72",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 102185,
+            "range": "± 2133.27",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 40999861,
+            "range": "± 7179.24",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 81931,
+            "range": "± 2176.16",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 16315556,
+            "range": "± 16330397.03",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 8097464,
+            "range": "± 128619.25",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7816152,
+            "range": "± 189672.30",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 52834706,
+            "range": "± 322047.66",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 52661433,
+            "range": "± 619002.65",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5692979,
+            "range": "± 178044.67",
             "unit": "ns/iter"
           }
         ]
