@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790289071029,
+  "lastUpdate": 1790289221562,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -32955,6 +32955,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 2870315,
             "range": "± 60040.72",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "gamer828@gmail.com",
+            "name": "Gavin D.",
+            "username": "Siech0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fd4ce420a781480229faa89a2fc824812c9dbcc3",
+          "message": "style(lib): address clippy panics and missing_panics_doc lints (#4191)\n\ncc #4071",
+          "timestamp": "2026-09-24T16:52:24-04:00",
+          "tree_id": "8c7c8a7a26c82af0fad03a0cd76233e9af24c72c",
+          "url": "https://github.com/dudw/hyper/commit/fd4ce420a781480229faa89a2fc824812c9dbcc3"
+        },
+        "date": 1790289220071,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 77805,
+            "range": "± 10002.51",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4232246,
+            "range": "± 376616.25",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 22149,
+            "range": "± 590.86",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 23678,
+            "range": "± 469.37",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 31806,
+            "range": "± 809.85",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 102523,
+            "range": "± 1353.03",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 41000171,
+            "range": "± 4940.36",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 82395,
+            "range": "± 1616.02",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 16294674,
+            "range": "± 16359981.44",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 7976037,
+            "range": "± 127101.36",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 12098815,
+            "range": "± 8327199.21",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 94207937,
+            "range": "± 1011342.82",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 55302012,
+            "range": "± 1046924.75",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5396400,
+            "range": "± 94117.64",
             "unit": "ns/iter"
           }
         ]
