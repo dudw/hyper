@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1789770852876,
+  "lastUpdate": 1790289071029,
   "repoUrl": "https://github.com/dudw/hyper",
   "entries": {
     "connect": [
@@ -9091,6 +9091,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 30678,
             "range": "± 3252.89",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "gamer828@gmail.com",
+            "name": "Gavin D.",
+            "username": "Siech0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fd4ce420a781480229faa89a2fc824812c9dbcc3",
+          "message": "style(lib): address clippy panics and missing_panics_doc lints (#4191)\n\ncc #4071",
+          "timestamp": "2026-09-24T16:52:24-04:00",
+          "tree_id": "8c7c8a7a26c82af0fad03a0cd76233e9af24c72c",
+          "url": "https://github.com/dudw/hyper/commit/fd4ce420a781480229faa89a2fc824812c9dbcc3"
+        },
+        "date": 1790289068681,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 31872,
+            "range": "± 3669.57",
             "unit": "ns/iter"
           }
         ]
